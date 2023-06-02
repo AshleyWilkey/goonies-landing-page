@@ -1,0 +1,87 @@
+:root {
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
+
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 4.5rem; /* 72px */
+  --text-8xl: 6rem; /* 96px */
+  --text-9xl: 8rem; /* 128px */
+}
+
+html {
+  color: wheat;
+}
+body {
+  background-color: #1c1c1c;
+}
+a {
+  color: wheat;
+}
+h2 {
+  font-family: "Goonies", sans-serif;
+}
+.container {
+  max-width: var(--screen-lg);
+  margin: 0 auto;
+}
+
+.nav {
+  padding-top: 2rem;
+}
+.nav-brand {
+  font-family: "Goonies", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  font-family: rubik;
+  font-size: var(--text-xl);
+}
+.nav-link {
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  color: rgb(189, 158, 101);
+  font-size: var(--text-2xl);
+}
+.main {
+  text-align: center;
+  font-family: rubix;
+  font-size: var(--text-2xl);
+}
+.mission {
+  padding: 2rem;
+  min-height: 240px;
+  display: block;
+  position: relative;
+}
+.mission::after {
+  content: "";
+  opacity: 0.4;
+  background-image: url("img/astoria.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
